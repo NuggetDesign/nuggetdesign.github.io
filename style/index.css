@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+:root {
+  --h1-white: #D7D6D3;
+  --text-white: #868481;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --extrabold: 800;
+  --title-desktop: 128px;
+  --title-mobile: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #101010;
+  font-family: 'Poppins', sans-serif;
+  color: var(--h1-white);
+  font-weight: var(--regular);
+}
+
+body img {
+  width: 100%;
+}
+
+section, .hero h1 {
+  margin: 16px;
+}
+
+.hero {
+  margin: 0;
+}
+
+.hero h1 {
+  font-weight: var(--extrabold);
+  font-size: var(--title-mobile);
+}
+
+.hero .video-container {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero .video-container video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.about {
+  padding: 5em 0;
+}
+
+.scroll {
+  width: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+.scroll p {
+  white-space: nowrap;
+  display: inline-block;
+  -webkit-animation: marquee 20s linear infinite;
+          animation: marquee 20s linear infinite;
+  width: 100%;
+  text-align: left;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+/*# sourceMappingURL=index.css.map */
