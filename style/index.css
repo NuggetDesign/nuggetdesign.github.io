@@ -15,7 +15,6 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #101010;
   font-family: 'Poppins', sans-serif;
   color: var(--h1-white);
   font-weight: var(--regular);
@@ -31,13 +30,125 @@
 
 body {
   font-size: var(--normal-mobile);
+  background-color: #101010;
 }
 
 body img {
   width: 100%;
 }
 
-section, .hero h1 {
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .circle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.container .circle .equal-line {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.container .circle .equal-line2 {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.container .circle.active .equal-line:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 50%;
+}
+
+.container .circle.active .equal-line:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 45%;
+}
+
+.container .circle.active .equal-line2:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 55%;
+}
+
+.container .circle.active .equal-line2:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 50%;
+}
+
+.container #menu {
+  position: absolute;
+  top: 80px;
+  background-color: #151515;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  margin: 0 0 0 16px;
+}
+
+.container #menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container .content {
+  padding: 60px;
+  margin-bottom: 20px;
+}
+
+.container .content li {
+  margin-bottom: 8px;
+}
+
+.about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
   margin: 16px;
 }
 
