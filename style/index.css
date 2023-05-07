@@ -9,6 +9,7 @@
   --extrabold: 800;
   --title-desktop: 128px;
   --title-mobile: 50px;
+  --normal-mobile: 20px;
 }
 
 * {
@@ -18,6 +19,10 @@
   font-family: 'Poppins', sans-serif;
   color: var(--h1-white);
   font-weight: var(--regular);
+}
+
+body {
+  font-size: var(--normal-mobile);
 }
 
 body img {
@@ -54,6 +59,31 @@ section, .hero h1 {
   padding: 5em 1em;
   color: var(--text-white);
   font-size: 20px;
+}
+
+.previous-work .projects {
+  line-height: 26px;
+}
+
+.previous-work .projects img {
+  margin-bottom: .5em;
+}
+
+.previous-work .projects .description {
+  color: var(--text-white);
+  margin-bottom: 2em;
+}
+
+footer .scroll p {
+  font-size: 50px;
+  font-weight: var(--semibold);
+  margin-bottom: .5em;
+}
+
+footer .mobile-button-up img {
+  background-color: #E36A0A;
+  height: 100%;
+  border-radius: 100%;
 }
 
 .scroll {

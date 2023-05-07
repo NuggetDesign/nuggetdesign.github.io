@@ -15,6 +15,7 @@
     // Font Size
     --title-desktop: 128px;
     --title-mobile: 50px;
+    --normal-mobile: 20px;
 }
 
 * {
@@ -27,6 +28,8 @@
 }
 
 body {
+    font-size: var(--normal-mobile);
+
     img {
         width: 100%;
     }
@@ -63,9 +66,34 @@ section, .hero h1 {
     font-size: 20px;
 }
 
+.previous-work {
+    .projects {
+        line-height: 26px;
 
+        img {
+            margin-bottom: .5em;
+        }
 
+        .description {
+            color: var(--text-white);
+            margin-bottom: 2em;
+        }
+    }
+}
 
+footer {
+    .scroll p{
+        font-size: 50px;
+        font-weight: var(--semibold);
+        margin-bottom: .5em;
+    }
+
+    .mobile-button-up img{
+        background-color: #E36A0A;
+        height: 100%;
+        border-radius: 100%;
+    }
+}
 
 
 
