@@ -39,7 +39,6 @@ body {
     }
 }
 
-
 .container {
     position: fixed;
     top: 0;
@@ -117,6 +116,21 @@ body {
       visibility: hidden;
       transition: opacity 0.3s ease, visibility 0.3s ease;
       margin: 0 0 0 16px;
+
+      .title {
+       font-size: 16px;
+       font-weight: var(--semibold);
+      }
+
+      .desc {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      .navigation-links {
+        margin-top: 3em;
+      }
+
     }
     
     #menu.active {
@@ -125,7 +139,7 @@ body {
     }
 
     .content {
-      padding: 60px;
+      padding: 60px 50px;
       margin-bottom: 20px;
 
       li {
@@ -134,6 +148,10 @@ body {
     }
   }
   
+.logo img {
+  width: 55px;
+  margin: 16px;
+}
 
 .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
     margin: 16px;
