@@ -51,6 +51,7 @@ body {
     height: 100vh;
     background-color: transparent;
     box-sizing: border-box;
+    overflow-x: hidden;  // Add this line to prevent horizontal overflow
 
     .circle {
       position: relative;
@@ -109,13 +110,14 @@ body {
     #menu {
       position: absolute;
       top: 80px;
+      left: 16px;  // Adjust the left position to match the desired margin
+      right: 16px;  // Adjust the right position to match the desired margin
       background-color: #151515;
       border-radius: 16px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
       opacity: 0;
       visibility: hidden;
       transition: opacity 0.3s ease, visibility 0.3s ease;
-      margin: 0 0 0 16px;
 
       .title {
        font-size: 16px;

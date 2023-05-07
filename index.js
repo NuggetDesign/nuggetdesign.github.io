@@ -7,7 +7,7 @@ function contactUsSection() {
   
     // Start the animation
     textContainer.style.animationPlayState = 'running';
-  }
+}
   
   function navigationButton() {
     const navButton = document.getElementById('navButton');
