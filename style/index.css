@@ -21,6 +21,14 @@
   font-weight: var(--regular);
 }
 
+* a {
+  text-decoration: none;
+}
+
+* ul {
+  list-style: none;
+}
+
 body {
   font-size: var(--normal-mobile);
 }
@@ -80,10 +88,36 @@ footer .scroll p {
   margin-bottom: .5em;
 }
 
+footer .mobile-button-up {
+  text-align: right;
+}
+
 footer .mobile-button-up img {
   background-color: #E36A0A;
   height: 100%;
+  width: 30%;
   border-radius: 100%;
+  margin: 6em 0 2em;
+  padding: 1em;
+}
+
+footer .desktop-button-up ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+footer .desktop-button-up ul a {
+  font-size: 18px;
+  color: var(--text-white);
+}
+
+footer .desktop-button-up img {
+  display: none;
 }
 
 .scroll {

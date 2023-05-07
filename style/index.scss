@@ -25,6 +25,10 @@
     font-family: 'Poppins', sans-serif;
     color: var(--h1-white);
     font-weight: var(--regular);
+    // border: 1px solid white;
+
+    a {text-decoration: none;}
+    ul {list-style: none;}
 }
 
 body {
@@ -88,10 +92,34 @@ footer {
         margin-bottom: .5em;
     }
 
-    .mobile-button-up img{
-        background-color: #E36A0A;
-        height: 100%;
-        border-radius: 100%;
+    .mobile-button-up {
+        text-align: right;
+        
+        img{
+            background-color: #E36A0A;
+            height: 100%;
+            width: 30%;
+            border-radius: 100%;
+            margin: 6em 0 2em;
+            padding: 1em;
+        }
+    }
+
+    .desktop-button-up {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5em;
+            
+            a {
+                font-size: 18px;
+                color: var(--text-white);
+            }
+        }
+
+        img {
+            display: none;
+        }
     }
 }
 
