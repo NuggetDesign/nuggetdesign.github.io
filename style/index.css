@@ -340,4 +340,20 @@ footer .desktop-button-up img {
             transform: translateX(-100%);
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img {
+    margin: 32px;
+  }
+  .container {
+    padding: 32px;
+  }
+  .container #menu, .container #menu.active {
+    left: 32px;
+    right: 32px;
+  }
+  .container .content {
+    padding: 120px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
