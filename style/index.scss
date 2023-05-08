@@ -18,6 +18,8 @@
     --title-mobile: 50px;
     --normal-tablet: 30px;
     --normal-mobile: 20px;
+    --contact-tablet: 100px;
+    --contact-mobile: 50px;
 }
 
 * {
@@ -244,7 +246,7 @@ body {
 
 footer {
     .scroll p{
-        font-size: 50px;
+        font-size: var(--contact-mobile);
         font-weight: var(--semibold);
         margin-bottom: .5em;
     }
@@ -322,14 +324,24 @@ footer {
   .container{
     width: 550px;
     padding: 32px;
+    height: 430px;
     
     #menu, #menu.active {
       right: 32px;
+      height: 460px;
+    }
+
+    #menu .navigation-links ul a {
+      font-size: 50px;
     }
 
     .content {
       padding: 80px;
     }
+  }
+
+  body {
+    font-size: var(--normal-tablet);
   }
 
   .hero h1 {
@@ -341,6 +353,19 @@ footer {
     font-size: var(--normal-tablet);
   }
 
+  .previous-work .projects {
+    line-height: 38px;
+  }
+
+  footer {
+    .scroll p {
+      font-size: 100px;
+    }
+
+    .desktop-button-up ul a {
+        font-size: var(--normal-tablet);
+    }
+  }
 
 
 
