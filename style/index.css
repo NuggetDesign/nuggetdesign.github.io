@@ -175,6 +175,24 @@ body img {
   margin-top: 3em;
 }
 
+.container #menu .navigation-links ul a {
+  font-weight: var(--bold);
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container #menu .navigation-links ul a span {
+  color: var(--text-white);
+  font-size: 14px;
+  margin-right: 1em;
+  margin-top: -1.2em;
+}
+
 .container #menu.active {
   opacity: 1;
   visibility: visible;
@@ -231,6 +249,16 @@ body img {
 
 .previous-work .projects img {
   margin-bottom: .5em;
+  -webkit-transition: border-radius 0.3s ease, -webkit-transform 0.3s ease;
+  transition: border-radius 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, border-radius 0.3s ease;
+  transition: transform 0.3s ease, border-radius 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.previous-work .projects img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  border-radius: 20px;
 }
 
 .previous-work .projects .description {

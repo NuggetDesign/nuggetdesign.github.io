@@ -148,6 +148,23 @@ body {
 
       .navigation-links {
         margin-top: 3em;
+
+        ul {
+          
+          a  {
+            font-weight: var(--bold);
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+
+            span {
+              color: var(--text-white);
+              font-size: 14px;
+              margin-right: 1em;
+              margin-top: -1.2em;
+            }
+          }
+        }
       }
 
     }
@@ -208,6 +225,12 @@ body {
 
         img {
             margin-bottom: .5em;
+            transition: transform 0.3s ease, border-radius 0.3s ease;
+        }
+
+        img:hover {
+          transform: scale(1.02);
+          border-radius: 20px;
         }
 
         .description {
@@ -287,3 +310,4 @@ footer {
         }
     }
 }
+
