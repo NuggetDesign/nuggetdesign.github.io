@@ -367,6 +367,112 @@ footer {
         font-size: var(--normal-tablet);
     }
   }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
+    margin: 80px;
+  }
+
+  .container {
+    width: 600px;
+
+    .circle {
+      width: 80px;
+      height: 80px;
+      margin: 32px 80px;
+
+      .equal-line {
+        left: 32%;
+        height: 3px;
+        width: 30px;
+      }
+
+      .equal-line2 {
+        left: 32%;
+        height: 3px;
+        width: 30px;
+      }
+    }
+
+    #menu, #menu.active {
+      top: 150px;
+      right: 78px;
+    }
+  }
+
+  .logo img {
+    width: 80px;
+    margin: 32px 80px;
+  }
+
+  .previous-work {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 32px;
+    grid-template-areas: 
+      "project-1 project-1 project-1 project-2 project-2 project-2"
+      ". project-3 project-3 project-3 project-3 ."
+      "project-4 project-4 project-4 . . ."
+      "project-5 project-5 project-5 project-5 project-6 project-6"
+      ". . project-7 project-7 project-7 project-7";
+
+    .projects {
+      line-height: 18px;
+
+      a img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .project-one {
+      grid-area: project-1;
+    }
+
+    .project-two {
+      grid-area: project-2;
+    }
+
+    .project-three {
+      grid-area: project-3;
+    }
+
+    .project-four {
+      grid-area: project-4;
+    }
+
+    .project-five {
+      grid-area: project-5;
+    }
+
+    .project-six {
+      grid-area: project-6;
+    }
+
+    .project-seven {
+      grid-area: project-7;
+    }
+
+    .title {
+      font-size: 14px;
+    }
+    .description {
+      font-size: 14px;
+    }
+  }
+
+
+
+
+
+
+
+
+
 
 
 
