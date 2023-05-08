@@ -66,11 +66,10 @@ body {
     top: 0;
     right: 0;
     display: flex;
-    padding: 16px;
     justify-content: flex-end;
     align-items: flex-start;
     width: 100%;
-    height: calc(100vh - 100%); /* Subtract the height of the navigation bar */
+    height: 100vh; /* Subtract the height of the navigation bar */
     background-color: transparent;
     box-sizing: border-box;
 
@@ -84,6 +83,7 @@ body {
       outline: none;
       cursor: pointer;
       z-index: 2;
+      margin: 16px;
   
       .equal-line {
         position: absolute;
@@ -130,12 +130,7 @@ body {
 
     #menu {
       position: absolute;
-      top: 100px;
-      left: 16px;  // Adjust the left position to match the desired margin
-      right: 16px;  // Adjust the right position to match the desired margin
       background-color: #151515;
-      border-radius: 16px;
-      box-shadow: 0 0px 100px rgb(0, 0, 0);
       opacity: 0;
       visibility: hidden;
       transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -323,12 +318,17 @@ footer {
   
   .container{
     width: 550px;
-    padding: 32px;
     height: 430px;
+
+    .circle {
+      margin: 32px;
+    }
     
     #menu, #menu.active {
       right: 32px;
       height: 460px;
+      border-radius: 16px;
+      top: 100px;
     }
 
     #menu .navigation-links ul a {

@@ -73,7 +73,6 @@ body img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 16px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -81,7 +80,7 @@ body img {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  height: calc(100vh - 100%);
+  height: 100vh;
   /* Subtract the height of the navigation bar */
   background-color: transparent;
   -webkit-box-sizing: border-box;
@@ -98,6 +97,7 @@ body img {
   outline: none;
   cursor: pointer;
   z-index: 2;
+  margin: 16px;
 }
 
 .container .circle .equal-line {
@@ -152,13 +152,7 @@ body img {
 
 .container #menu {
   position: absolute;
-  top: 100px;
-  left: 16px;
-  right: 16px;
   background-color: #151515;
-  border-radius: 16px;
-  -webkit-box-shadow: 0 0px 100px black;
-          box-shadow: 0 0px 100px black;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -351,12 +345,16 @@ footer .desktop-button-up img {
   }
   .container {
     width: 550px;
-    padding: 32px;
     height: 430px;
+  }
+  .container .circle {
+    margin: 32px;
   }
   .container #menu, .container #menu.active {
     right: 32px;
     height: 460px;
+    border-radius: 16px;
+    top: 100px;
   }
   .container #menu .navigation-links ul a {
     font-size: 50px;
