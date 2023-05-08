@@ -388,6 +388,9 @@ footer .desktop-button-up img {
   .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
     margin: 80px;
   }
+  .hero .video-container video {
+    aspect-ratio: 16/9;
+  }
   .container {
     width: 600px;
   }
@@ -425,7 +428,7 @@ footer .desktop-button-up img {
         grid-template-areas: "project-1 project-1 project-1 project-2 project-2 project-2" ". project-3 project-3 project-3 project-3 ." "project-4 project-4 project-4 . . ." "project-5 project-5 project-5 project-5 project-6 project-6" ". . project-7 project-7 project-7 project-7";
   }
   .previous-work .projects {
-    line-height: 18px;
+    line-height: 20px;
   }
   .previous-work .projects a img {
     height: 300px;
@@ -476,10 +479,99 @@ footer .desktop-button-up img {
     grid-area: project-7;
   }
   .previous-work .title {
-    font-size: 14px;
+    font-size: 16px;
   }
   .previous-work .description {
-    font-size: 14px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .previous-work .projects {
+    line-height: 28px;
+  }
+  .previous-work .projects a img {
+    height: 400px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .previous-work .projects .title, .previous-work .projects .description {
+    font-size: 20px;
+  }
+  footer {
+    margin-bottom: -5em;
+  }
+  footer .description {
+    margin-top: 10px;
+  }
+  footer .mobile-button-up {
+    display: none;
+  }
+  footer .desktop-button-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .desktop-button-up ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 0;
+  }
+  footer .desktop-button-up ul li {
+    margin-right: 1em;
+  }
+  footer .desktop-button-up a img {
+    display: block;
+    background-color: #E36A0A;
+    width: 300px;
+    border-radius: 100%;
+    margin: 6em 0 2em;
+    padding: 1em;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
+    width: 1640px;
+    margin: 0 auto;
+  }
+  .logo-inside {
+    width: 1800px;
+    margin: 0 auto;
+  }
+  .container {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 1640px;
+    /* Adjust the width as desired */
+  }
+  .container .circle {
+    margin: 0;
+    padding: 0;
+    top: 32px;
+  }
+  .container #menu, .container #menu.active {
+    right: 0;
+    width: 400px;
   }
 }
 /*# sourceMappingURL=index.css.map */

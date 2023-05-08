@@ -375,6 +375,12 @@ footer {
     margin: 80px;
   }
 
+  .hero {
+    .video-container video {
+      aspect-ratio: 16/9;
+    }
+  }
+
   .container {
     width: 600px;
 
@@ -420,7 +426,7 @@ footer {
       ". . project-7 project-7 project-7 project-7";
 
     .projects {
-      line-height: 18px;
+      line-height: 20px;
 
       a img {
         height: 300px;
@@ -458,16 +464,101 @@ footer {
     }
 
     .title {
-      font-size: 14px;
+      font-size: 16px;
     }
     .description {
-      font-size: 14px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .previous-work .projects {
+    line-height: 28px;
+
+    a img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .title, .description {
+      font-size: 20px;
     }
   }
 
+  
+  
+  footer {
+    margin-bottom: -5em;
 
+    .description {
+      margin-top: 10px;
+    }
 
+    .mobile-button-up {
+      display: none;
+    }
+  
+    .desktop-button-up {
+      display: flex;
+      justify-content: space-between;
+      
+      ul {
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-top: 0;
 
+        li {
+          margin-right: 1em;
+        }
+      }
+  
+      a img {
+        display: block;
+        background-color: #E36A0A;
+        width: 300px;
+        border-radius: 100%;
+        margin: 6em 0 2em;
+        padding: 1em;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
+    width: 1640px;
+    margin: 0 auto;
+  }
+
+  .logo-inside {
+    width: 1800px;
+    margin: 0 auto;
+  }
+
+  .container {
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 1640px; /* Adjust the width as desired */
+
+    .circle {
+      margin: 0;
+      padding: 0;
+      top: 32px;
+    }
+
+    #menu, #menu.active {
+      right: 0;
+      width: 400px;
+    }
+  }
 
 
 
