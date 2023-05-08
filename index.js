@@ -16,7 +16,7 @@ function navigationButton() {
 
   const tl = gsap.timeline({ paused: true });
 
-  tl.to(menu, { height: '340', duration: 0 });
+  tl.to(menu, { height: '360', duration: 0 });
   tl.fromTo(
     menu,
     { opacity: 0, paddingTop: 0, paddingBottom: 0 },
