@@ -487,6 +487,9 @@ footer .desktop-button-up img {
 }
 
 @media only screen and (min-width: 1440px) {
+  .about {
+    padding: 80px 220px;
+  }
   .previous-work .projects {
     line-height: 28px;
   }
@@ -572,6 +575,13 @@ footer .desktop-button-up img {
   .container #menu, .container #menu.active {
     right: 0;
     width: 400px;
+  }
+  .about {
+    width: 900px;
+    padding: 180px 0;
+  }
+  .previous-work .projects a img {
+    height: 500px;
   }
 }
 /*# sourceMappingURL=index.css.map */
