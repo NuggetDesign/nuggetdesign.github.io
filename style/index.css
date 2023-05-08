@@ -584,4 +584,35 @@ footer .desktop-button-up img {
     height: 500px;
   }
 }
+
+@media only screen and (min-width: 2560px) {
+  .hero h1, .previous-work, footer {
+    width: 2340px;
+    margin: 0 auto;
+  }
+  .logo-inside {
+    width: 2530px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 2340px;
+    /* Adjust the width as desired */
+  }
+  .about {
+    width: 1400px;
+    padding: 180px 0;
+  }
+  .previous-work .projects a img {
+    height: 700px;
+  }
+  footer .description {
+    width: 1200px;
+    margin: 0;
+    text-align: left;
+  }
+  footer .desktop-button-up {
+    width: 2340px;
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=index.css.map */
