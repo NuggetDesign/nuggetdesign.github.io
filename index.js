@@ -20,7 +20,7 @@ function navigationButton() {
   tl.fromTo(
     menu,
     { opacity: 0, paddingTop: 0, paddingBottom: 0 },
-    { opacity: 1, paddingTop: '44px', paddingBottom: '16px', duration: 0.3, ease: 'power2.out' }
+    { opacity: 1, paddingTop: '64px', paddingBottom: '16px', duration: 0.3, ease: 'power2.out' }
   );
   tl.fromTo(
     menu,

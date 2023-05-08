@@ -346,14 +346,15 @@ footer .desktop-button-up img {
     margin: 32px;
   }
   .container {
+    width: 500px;
     padding: 32px;
   }
   .container #menu, .container #menu.active {
-    left: 32px;
     right: 32px;
   }
   .container .content {
-    padding: 120px;
+    padding: 80px;
+    padding-top: 2em;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -318,15 +318,15 @@ footer {
   }
   
   .container{
+    width: 500px;
     padding: 32px;
     
     #menu, #menu.active {
-      left: 32px;  
       right: 32px;
     }
 
     .content {
-      padding: 120px;
+      padding: 80px;
     }
   }
 
