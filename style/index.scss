@@ -72,6 +72,7 @@ body {
     height: 100vh; /* Subtract the height of the navigation bar */
     background-color: transparent;
     box-sizing: border-box;
+    z-index: 10;
 
     .circle {
       position: relative;
