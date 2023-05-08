@@ -8,7 +8,9 @@
   --bold: 700;
   --extrabold: 800;
   --title-desktop: 128px;
+  --title-tablet: 90px;
   --title-mobile: 50px;
+  --normal-tablet: 30px;
   --normal-mobile: 20px;
 }
 
@@ -354,6 +356,13 @@ footer .desktop-button-up img {
   }
   .container .content {
     padding: 80px;
+  }
+  .hero h1 {
+    font-size: var(--title-tablet);
+  }
+  .about {
+    padding: 5em 2em;
+    font-size: var(--normal-tablet);
   }
 }
 /*# sourceMappingURL=index.css.map */

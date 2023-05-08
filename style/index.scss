@@ -14,7 +14,9 @@
 
     // Font Size
     --title-desktop: 128px;
+    --title-tablet: 90px;
     --title-mobile: 50px;
+    --normal-tablet: 30px;
     --normal-mobile: 20px;
 }
 
@@ -330,6 +332,14 @@ footer {
     }
   }
 
+  .hero h1 {
+    font-size: var(--title-tablet);
+  }
+
+  .about {
+    padding: 5em 2em;
+    font-size: var(--normal-tablet);
+  }
 
 
 
