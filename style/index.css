@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 :root {
+  --background-black: #101010;
   --h1-white: #D7D6D3;
   --text-white: #868481;
   --regular: 400;
@@ -34,7 +35,7 @@
 
 body {
   font-size: var(--normal-mobile);
-  background-color: #101010;
+  background-color: var(--background-black);
 }
 
 body img {
@@ -211,7 +212,7 @@ body img {
   margin: 16px;
 }
 
-.about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
+.about, .hero h1, .hero p, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
   margin: 16px;
 }
 
@@ -301,6 +302,38 @@ footer .desktop-button-up ul a {
 
 footer .desktop-button-up img {
   display: none;
+}
+
+.map-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.map-preview .map-container {
+  position: absolute;
+  z-index: -1;
+}
+
+.map-preview .map-container img {
+  height: 700px;
+  width: auto;
+  z-index: 2;
+}
+
+.map-preview .map-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #101010;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(6%, #101010), to(rgba(16, 16, 16, 0.683911)));
+  background: linear-gradient(0deg, #101010 6%, rgba(16, 16, 16, 0.683911) 100%);
 }
 
 .scroll {

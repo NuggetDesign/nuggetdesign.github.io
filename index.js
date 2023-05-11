@@ -75,7 +75,7 @@ window.addEventListener('load', function() {
     preloader.style.display = 'flex';
   };
   
-  image.src = 'images/logo.png';
+  image.src = '/images/logo.png';
 
   function removePreloader() {
     // Remove the preloader
