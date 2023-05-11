@@ -320,7 +320,8 @@ footer .desktop-button-up img {
 
 .map-preview .map-container img {
   height: 700px;
-  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 2;
 }
 

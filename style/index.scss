@@ -295,7 +295,7 @@ footer {
   
     img {
       height: 700px;
-      width: auto;
+      object-fit: cover;
       z-index: 2;
     }
   
@@ -312,10 +312,6 @@ footer {
   }
 }
 
-
-.hero-maps {
-  
-}
 
 
 
