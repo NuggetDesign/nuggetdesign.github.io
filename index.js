@@ -16,7 +16,6 @@ function navigationButton() {
 
   const tl = gsap.timeline({ paused: true });
 
-  tl.to(menu, { height: '100%', duration: 0 });
   tl.fromTo(
     menu,
     { opacity: 0, paddingTop: 0, paddingBottom: 0 },
@@ -33,7 +32,7 @@ function navigationButton() {
     menu.classList.toggle('active');
 
     if (menu.classList.contains('active')) {
-      menu.style.height = '0';
+      menu.style.height = '';
       menu.style.visibility = 'visible';
       menu.style.clipPath = 'inset(0 0 100% 0)';
       tl.play();

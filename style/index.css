@@ -81,8 +81,7 @@ body img {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  height: 100vh;
-  /* Subtract the height of the navigation bar */
+  height: calc(100vh - 100%);
   background-color: transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -159,6 +158,7 @@ body img {
   visibility: hidden;
   -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  height: 100vh;
 }
 
 .container #menu .title {
@@ -196,6 +196,7 @@ body img {
 .container #menu.active {
   opacity: 1;
   visibility: visible;
+  height: 100vh;
 }
 
 .container .content {
@@ -333,8 +334,33 @@ footer .desktop-button-up img {
   bottom: 0;
   left: 0;
   background: #101010;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(6%, #101010), to(rgba(16, 16, 16, 0.683911)));
-  background: linear-gradient(0deg, #101010 6%, rgba(16, 16, 16, 0.683911) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #101010), to(rgba(16, 16, 16, 0.596)));
+  background: linear-gradient(0deg, #101010 8%, rgba(16, 16, 16, 0.596) 100%);
+}
+
+.hero-maps {
+  margin: 6em 16px 4em;
+}
+
+.hero-maps h1 {
+  font-weight: var(--semibold);
+  font-size: var(--title-mobile);
+}
+
+.hero-maps p {
+  line-height: 26px;
+}
+
+.hero-maps .project-information {
+  margin-top: 12em;
+}
+
+.hero-maps .project-information .description {
+  margin-top: 1em;
+}
+
+.hero-maps .project-information .description p {
+  color: var(--text-white);
 }
 
 .scroll {
@@ -380,7 +406,6 @@ footer .desktop-button-up img {
   }
   .container {
     width: 550px;
-    height: 430px;
   }
   .container .circle {
     margin: 32px;
