@@ -249,7 +249,7 @@ body {
 }
 
 footer {
-    .scroll p{
+    .scroll-effect p {
         font-size: var(--contact-mobile);
         font-weight: var(--semibold);
         margin-bottom: .5em;
@@ -388,7 +388,7 @@ footer {
 
 
 
-.scroll {
+.scroll-effect {
     width: 100%;
     overflow: hidden;
     color: white;
@@ -460,7 +460,7 @@ footer {
   }
 
   footer {
-    .scroll p {
+    .scroll-effect p {
       font-size: 100px;
     }
     
@@ -642,10 +642,11 @@ footer {
   }
 
   footer {
-    margin-bottom: -5em;
+    .scroll-effect p {
+      margin-bottom: 0;
+    }
 
     .description {
-      margin-top: 10px;
       width: 800px;
       text-align: left;
     }

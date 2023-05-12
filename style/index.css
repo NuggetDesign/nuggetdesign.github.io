@@ -269,7 +269,7 @@ body img {
   margin-bottom: 2em;
 }
 
-footer .scroll p {
+footer .scroll-effect p {
   font-size: var(--contact-mobile);
   font-weight: var(--semibold);
   margin-bottom: .5em;
@@ -404,13 +404,13 @@ footer .desktop-button-up img {
   margin: 6em 0;
 }
 
-.scroll {
+.scroll-effect {
   width: 100%;
   overflow: hidden;
   color: white;
 }
 
-.scroll p {
+.scroll-effect p {
   white-space: nowrap;
   display: inline-block;
   -webkit-animation: marquee 20s linear infinite;
@@ -476,7 +476,7 @@ footer .desktop-button-up img {
   .previous-work .projects, .other-projects .projects {
     line-height: 38px;
   }
-  footer .scroll p {
+  footer .scroll-effect p {
     font-size: 100px;
   }
   footer .mobile-button-up {
@@ -636,11 +636,10 @@ footer .desktop-button-up img {
   .other-projects .projects .title, .other-projects .projects .description {
     font-size: 16px;
   }
-  footer {
-    margin-bottom: -5em;
+  footer .scroll-effect p {
+    margin-bottom: 0;
   }
   footer .description {
-    margin-top: 10px;
     width: 800px;
     text-align: left;
   }
