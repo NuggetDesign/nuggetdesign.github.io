@@ -711,6 +711,26 @@ footer .desktop-button-up img {
     width: 300px;
     margin: 6em 0 2em;
   }
+  .map-preview .map-container img {
+    height: 900px;
+  }
+  .hero-maps {
+    margin: 4em 5em 0;
+  }
+  .hero-maps h1 {
+    font-size: var(--title-desktop);
+  }
+  .hero-maps .hero-maps-desc {
+    width: 100%;
+  }
+  .hero-maps .project-information {
+    -ms-grid-columns: 400px auto;
+        grid-template-columns: 400px auto;
+    margin: 10em 0 4em;
+  }
+  .showcase-content-one {
+    margin: 0 5em 0;
+  }
 }
 
 @media only screen and (min-width: 1920px) {

@@ -626,6 +626,7 @@ footer {
     }
   }
 
+
   .other-projects {
     margin-top: 2em;
     display: grid;
@@ -726,6 +727,38 @@ footer {
       }
     }
   }
+
+  // Maps
+
+  .map-preview {
+    .map-container {
+      img {
+        height: 900px;
+      }
+    }
+  }
+
+  .hero-maps {
+    margin: 4em 5em 0;
+
+    h1 {
+      font-size: var(--title-desktop);
+    }
+
+    .hero-maps-desc {
+      width: 100%;
+    }
+
+    .project-information {
+      grid-template-columns: 400px auto;
+      margin: 10em 0 4em;
+    }
+  }
+
+  .showcase-content-one {
+    margin: 0 5em 0;
+  }
+
 }
 
 @media only screen and (min-width: 1920px) {
