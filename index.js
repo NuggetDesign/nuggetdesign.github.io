@@ -81,3 +81,45 @@ window.addEventListener('load', function() {
     preloader.remove();
   }
 });
+
+function scrollToTop(duration, easing) {
+  const start = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  const to = 0;
+  const startTime = performance.now();
+  const scrollContainer = document.scrollingElement || document.documentElement;
+
+  function scrollAnimation(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const easeProgress = easing(progress);
+    const scrollToTop = start + (to - start) * easeProgress;
+    scrollContainer.scrollTop = scrollToTop;
+
+    if (elapsed < duration) {
+      requestAnimationFrame(scrollAnimation);
+    }
+  }
+
+  requestAnimationFrame(scrollAnimation);
+}
+
+// Easing function: easeOutQuad
+function easeOutQuad(t) {
+  return t * (2 - t);
+}
+
+// Add click event listener to the scroll-up button for desktop
+const scrollUpButtonDesktop = document.getElementById('scrollUpButtonDesktop');
+scrollUpButtonDesktop.addEventListener('click', () => {
+  const duration = 500; // in milliseconds
+  const easing = easeOutQuad;
+  scrollToTop(duration, easing);
+});
+
+// Add click event listener to the scroll-up button for mobile
+const scrollUpButtonMobile = document.getElementById('scrollUpButtonMobile');
+scrollUpButtonMobile.addEventListener('click', () => {
+  const duration = 500; // in milliseconds
+  const easing = easeOutQuad;
+  scrollToTop(duration, easing);
+});
