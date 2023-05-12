@@ -762,6 +762,18 @@ footer .desktop-button-up img {
   .showcase-content-one {
     margin: 0 5em 0;
   }
+  .showcase-content-two .content-information {
+    padding: 0 4em;
+  }
+  .showcase-content-two .content-images-two {
+    gap: 20px;
+  }
+  .showcase-content-two img {
+    height: 600px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
