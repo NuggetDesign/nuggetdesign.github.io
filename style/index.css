@@ -622,8 +622,38 @@ footer .desktop-button-up img {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .showcase-content-two .content-images-two {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+        grid-template-areas: "image-1 image-2" "image-3 image-3";
+  }
+  .showcase-content-two .image-one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: image-1;
+  }
+  .showcase-content-two .image-two {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: image-2;
+  }
+  .showcase-content-two .image-three {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: image-3;
+  }
+  .showcase-content-two img {
+    height: 400px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .other-projects {
-    margin-top: 2em;
+    margin-top: 8em;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];

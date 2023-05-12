@@ -626,9 +626,36 @@ footer {
     }
   }
 
+  .showcase-content-two {
+    .content-images-two {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      grid-template-areas: 
+      "image-1 image-2"
+      "image-3 image-3"
+    }
+
+    .image-one {
+      grid-area: image-1;
+    }
+    .image-two {
+      grid-area: image-2;
+    }
+    .image-three {
+      grid-area: image-3;
+    }
+
+    img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+  }
 
   .other-projects {
-    margin-top: 2em;
+    margin-top: 8em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
