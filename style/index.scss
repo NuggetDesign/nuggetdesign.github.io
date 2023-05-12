@@ -254,8 +254,14 @@ footer {
         margin-bottom: .5em;
     }
 
+    .description {
+      position: absolute;
+      z-index: -1;
+    }
+
     .mobile-button-up {
         text-align: right;
+        margin-top: 5em;
         
         img{
             background-color: #E36A0A;
@@ -341,7 +347,10 @@ footer {
 }
 
 .showcase-content-one {
+
   .information-one {
+    margin: 6em 0;
+
     img {
       width: 12px;
       margin-right: 1em;
@@ -367,7 +376,7 @@ footer {
 
 .showcase-content-two {
   .content-information {
-    margin: 4em 0;
+    margin: 6em 0;
   }
 }
 

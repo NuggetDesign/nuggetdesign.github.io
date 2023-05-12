@@ -274,8 +274,14 @@ footer .scroll p {
   margin-bottom: .5em;
 }
 
+footer .description {
+  position: absolute;
+  z-index: -1;
+}
+
 footer .mobile-button-up {
   text-align: right;
+  margin-top: 5em;
 }
 
 footer .mobile-button-up img {
@@ -364,6 +370,10 @@ footer .desktop-button-up img {
   color: var(--text-white);
 }
 
+.showcase-content-one .information-one {
+  margin: 6em 0;
+}
+
 .showcase-content-one .information-one img {
   width: 12px;
   margin-right: 1em;
@@ -390,7 +400,7 @@ footer .desktop-button-up img {
 }
 
 .showcase-content-two .content-information {
-  margin: 4em 0;
+  margin: 6em 0;
 }
 
 .scroll {
