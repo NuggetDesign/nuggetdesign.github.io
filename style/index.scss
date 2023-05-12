@@ -708,38 +708,21 @@ footer {
   
   
   footer {
-    margin-bottom: -5em;
-
     .description {
-      margin-top: 10px;
-    }
-
-    .mobile-button-up {
-      display: none;
+      margin-top: 20px;
     }
   
     .desktop-button-up {
       display: flex;
       justify-content: space-between;
       
-      ul {
-        justify-content: flex-start;
-        align-items: flex-end;
-        margin-top: 0;
-
-        li {
+      ul li {
           margin-right: 1em;
-        }
       }
   
       a img {
-        display: block;
-        background-color: #E36A0A;
         width: 300px;
-        border-radius: 100%;
         margin: 6em 0 2em;
-        padding: 1em;
-        margin-left: auto;
       }
     }
   }
