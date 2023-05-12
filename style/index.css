@@ -15,6 +15,7 @@
   --normal-mobile: 20px;
   --contact-tablet: 100px;
   --contact-mobile: 50px;
+  --maps-information-title: 30px;
 }
 
 * {
@@ -213,7 +214,7 @@ body img {
   margin: 16px;
 }
 
-.about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
+.about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects {
   margin: 16px;
 }
 
@@ -244,11 +245,11 @@ body img {
   font-size: 20px;
 }
 
-.previous-work .projects {
+.previous-work .projects, .other-projects .projects {
   line-height: 26px;
 }
 
-.previous-work .projects img {
+.previous-work .projects img, .other-projects .projects img {
   margin-bottom: .5em;
   -webkit-transition: border-radius 0.3s ease, -webkit-transform 0.3s ease;
   transition: border-radius 0.3s ease, -webkit-transform 0.3s ease;
@@ -256,13 +257,13 @@ body img {
   transition: transform 0.3s ease, border-radius 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-.previous-work .projects img:hover {
+.previous-work .projects img:hover, .other-projects .projects img:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   border-radius: 20px;
 }
 
-.previous-work .projects .description {
+.previous-work .projects .description, .other-projects .projects .description {
   color: var(--text-white);
   margin-bottom: 2em;
 }
@@ -361,6 +362,35 @@ footer .desktop-button-up img {
 
 .hero-maps .project-information .description p {
   color: var(--text-white);
+}
+
+.showcase-content-one .information-one img {
+  width: 12px;
+  margin-right: 1em;
+  margin-top: 18px;
+}
+
+.showcase-content-one .information-one .left, .showcase-content-one .information-one .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin: 2em 0;
+}
+
+.showcase-content-one .information-one .left .title, .showcase-content-one .information-one .right .title {
+  font-weight: var(--semibold);
+  font-size: var(--maps-information-title);
+}
+
+.showcase-content-one .information-one .left .desc, .showcase-content-one .information-one .right .desc {
+  margin-top: 4px;
+}
+
+.showcase-content-two .content-information {
+  margin: 4em 0;
 }
 
 .scroll {

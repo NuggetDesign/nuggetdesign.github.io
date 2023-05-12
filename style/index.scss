@@ -22,6 +22,7 @@
     --normal-mobile: 20px;
     --contact-tablet: 100px;
     --contact-mobile: 50px;
+    --maps-information-title: 30px;
 }
 
 * {
@@ -195,7 +196,7 @@ body {
   margin: 16px;
 }
 
-.about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
+.about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects {
     margin: 16px;
 }
 
@@ -225,7 +226,7 @@ body {
     font-size: 20px;
 }
 
-.previous-work {
+.previous-work, .other-projects {
     .projects {
         line-height: 26px;
 
@@ -339,6 +340,36 @@ footer {
   }
 }
 
+.showcase-content-one {
+  .information-one {
+    img {
+      width: 12px;
+      margin-right: 1em;
+      margin-top: 18px;
+    }
+
+    .left, .right {
+      display: flex;
+      align-items: start;
+      margin: 2em 0;
+
+      .title {
+        font-weight: var(--semibold);
+        font-size: var(--maps-information-title);
+      }
+
+      .desc {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+.showcase-content-two {
+  .content-information {
+    margin: 4em 0;
+  }
+}
 
 
 
