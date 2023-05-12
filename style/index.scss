@@ -641,16 +641,45 @@ footer {
     }
   }
 
-  .footer {
+  footer {
+    margin-bottom: -5em;
+
     .description {
+      margin-top: 10px;
       width: 800px;
       text-align: left;
     }
 
-    .mobile-button-up img {
-      margin: 6em 0 1em;
+    .mobile-button-up {
+      display: none;
+    }
+  
+    .desktop-button-up {
+      display: flex;
+      justify-content: space-between;
+      
+      ul {
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-top: 0;
+
+        li {
+          margin-right: .5em;
+        }
+      }
+  
+      a img {
+        display: block;
+        background-color: #E36A0A;
+        width: 200px;
+        border-radius: 100%;
+        margin: 7em 0 2em;
+        padding: 1em;
+        margin-left: auto;
+      }
     }
   }
+
 
 }
 
