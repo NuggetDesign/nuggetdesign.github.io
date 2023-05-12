@@ -355,7 +355,7 @@ footer .desktop-button-up img {
   font-size: var(--title-mobile);
 }
 
-.hero-maps p {
+.hero-maps .hero-maps-desc {
   line-height: 26px;
 }
 
@@ -488,31 +488,27 @@ footer .desktop-button-up img {
   footer .desktop-button-up ul a {
     font-size: var(--normal-tablet);
   }
-}
-
-.hero-maps {
-  margin: 2em 32px 0;
-}
-
-.hero-maps p {
-  line-height: 38px;
-}
-
-.hero-maps .project-information {
-  margin: 6em 0 3em;
-}
-
-.showcase-content-one .information-one .left img, .showcase-content-one .information-one .right img {
-  width: 16px;
-  margin-top: 32px;
-}
-
-.showcase-content-one .information-one .left .title, .showcase-content-one .information-one .right .title {
-  font-size: var(--maps-information-title-tablet);
+  .hero-maps {
+    margin: 2em 32px 0;
+  }
+  .hero-maps .hero-maps-desc {
+    width: 700px;
+    line-height: 38px;
+  }
+  .hero-maps .project-information {
+    margin: 6em 0 3em;
+  }
+  .showcase-content-one .information-one .left img, .showcase-content-one .information-one .right img {
+    width: 16px;
+    margin-top: 32px;
+  }
+  .showcase-content-one .information-one .left .title, .showcase-content-one .information-one .right .title {
+    font-size: var(--maps-information-title-tablet);
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects {
     margin: 80px;
   }
   .hero .video-container video {
