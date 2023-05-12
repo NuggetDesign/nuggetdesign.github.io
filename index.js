@@ -82,6 +82,18 @@ window.addEventListener('load', function() {
   }
 });
 
+// Add click event listener to the scroll-up button for desktop
+const scrollUpButtonDesktop = document.getElementById('scrollUpButtonDesktop');
+scrollUpButtonDesktop.addEventListener('click', () => {
+  scrollToTop(500, easeOutQuad);
+});
+
+// Add click event listener to the scroll-up button for mobile
+const scrollUpButtonMobile = document.getElementById('scrollUpButtonMobile');
+scrollUpButtonMobile.addEventListener('click', () => {
+  scrollToTop(500, easeOutQuad);
+});
+
 function scrollToTop(duration, easing) {
   const start = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
   const to = 0;
@@ -107,19 +119,3 @@ function scrollToTop(duration, easing) {
 function easeOutQuad(t) {
   return t * (2 - t);
 }
-
-// Add click event listener to the scroll-up button for desktop
-const scrollUpButtonDesktop = document.getElementById('scrollUpButtonDesktop');
-scrollUpButtonDesktop.addEventListener('click', () => {
-  const duration = 500; // in milliseconds
-  const easing = easeOutQuad;
-  scrollToTop(duration, easing);
-});
-
-// Add click event listener to the scroll-up button for mobile
-const scrollUpButtonMobile = document.getElementById('scrollUpButtonMobile');
-scrollUpButtonMobile.addEventListener('click', () => {
-  const duration = 500; // in milliseconds
-  const easing = easeOutQuad;
-  scrollToTop(duration, easing);
-});
