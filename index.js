@@ -1,5 +1,5 @@
 function contactUsSection() {
-    const textContainer = document.querySelector('.scroll-effect');
+    const textContainer = document.querySelector('scroll-effect');
     const textNodes = textContainer.querySelectorAll('p');
   
     // Clone the text elements and append them to the container
