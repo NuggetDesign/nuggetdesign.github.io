@@ -672,6 +672,7 @@ footer .desktop-button-up img {
   footer .description {
     width: 800px;
     text-align: left;
+    margin-top: .5em;
   }
   footer .mobile-button-up {
     display: none;
