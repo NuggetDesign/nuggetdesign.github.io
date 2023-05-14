@@ -22,8 +22,8 @@
     --normal-mobile: 20px;
     --contact-tablet: 100px;
     --contact-mobile: 50px;
-    --maps-information-title-tablet: 50px;
-    --maps-information-title: 30px;
+    --showcases-information-title-tablet: 50px;
+    --showcases-information-title: 30px;
 }
 
 * {
@@ -293,13 +293,13 @@ footer {
 }
 
 
-// Maps
+// showcases
 
-.map-preview {
+.showcase-preview {
   display: flex;
   justify-content: center;
 
-  .map-container {
+  .showcase-container {
     position: absolute;
     z-index: -1;
   
@@ -322,7 +322,7 @@ footer {
   }
 }
 
-.hero-maps {
+.hero-showcases {
   margin: 6em 16px 4em;
 
   h1 {
@@ -330,7 +330,7 @@ footer {
     font-size: var(--title-mobile);
   }
 
-  .hero-maps-desc {
+  .hero-showcases-desc {
     line-height: 26px;
   }
 
@@ -365,7 +365,7 @@ footer {
 
       .title {
         font-weight: var(--semibold);
-        font-size: var(--maps-information-title);
+        font-size: var(--showcases-information-title);
       }
 
       .desc {
@@ -477,12 +477,12 @@ footer {
     }
   }
 
-  // Maps
+  // showcases
 
-  .hero-maps {
+  .hero-showcases {
     margin: 2em 32px 0;
 
-    .hero-maps-desc {
+    .hero-showcases-desc {
       width: 700px;
       line-height: 38px;
     }
@@ -501,7 +501,7 @@ footer {
         }
 
         .title {
-          font-size: var(--maps-information-title-tablet);
+          font-size: var(--showcases-information-title-tablet);
         }
       }
     }
@@ -609,7 +609,7 @@ footer {
     }
   }
 
-  .hero-maps {
+  .hero-showcases {
     margin: 2em 80px 0;
 
     .project-information {
@@ -756,24 +756,24 @@ footer {
     }
   }
 
-  // Maps
+  // showcases
 
-  .map-preview {
-    .map-container {
+  .showcase-preview {
+    .showcase-container {
       img {
         height: 900px;
       }
     }
   }
 
-  .hero-maps {
+  .hero-showcases {
     margin: 4em 5em 0;
 
     h1 {
       font-size: var(--title-desktop);
     }
 
-    .hero-maps-desc {
+    .hero-showcases-desc {
       width: 100%;
     }
 
@@ -850,15 +850,15 @@ footer {
     }
   }
 
-  .map-preview {
-    .map-container {
+  .showcase-preview {
+    .showcase-container {
        img {
           width: 1920px;
        }
     }
   }
 
-  .hero-maps {
+  .hero-showcases {
     margin: 4em 8em 0;
   }
 
@@ -926,15 +926,15 @@ footer {
     }
   }
 
-  .map-preview {
-    .map-container {
+  .showcase-preview {
+    .showcase-container {
        img {
           width: 2560px;
        }
     }
   }
 
-  .hero-maps, .showcase-content-one {
+  .hero-showcases, .showcase-content-one {
     width: 1900px;
     margin: 0 auto;
   }

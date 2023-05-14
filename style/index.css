@@ -15,8 +15,8 @@
   --normal-mobile: 20px;
   --contact-tablet: 100px;
   --contact-mobile: 50px;
-  --maps-information-title-tablet: 50px;
-  --maps-information-title: 30px;
+  --showcases-information-title-tablet: 50px;
+  --showcases-information-title: 30px;
 }
 
 * {
@@ -313,7 +313,7 @@ footer .desktop-button-up img {
   display: none;
 }
 
-.map-preview {
+.showcase-preview {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,19 +322,19 @@ footer .desktop-button-up img {
           justify-content: center;
 }
 
-.map-preview .map-container {
+.showcase-preview .showcase-container {
   position: absolute;
   z-index: -1;
 }
 
-.map-preview .map-container img {
+.showcase-preview .showcase-container img {
   height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 2;
 }
 
-.map-preview .map-container::before {
+.showcase-preview .showcase-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -346,28 +346,28 @@ footer .desktop-button-up img {
   background: linear-gradient(0deg, #101010 8%, rgba(16, 16, 16, 0.596) 100%);
 }
 
-.hero-maps {
+.hero-showcases {
   margin: 6em 16px 4em;
 }
 
-.hero-maps h1 {
+.hero-showcases h1 {
   font-weight: var(--semibold);
   font-size: var(--title-mobile);
 }
 
-.hero-maps .hero-maps-desc {
+.hero-showcases .hero-showcases-desc {
   line-height: 26px;
 }
 
-.hero-maps .project-information {
+.hero-showcases .project-information {
   margin-top: 12em;
 }
 
-.hero-maps .project-information .description {
+.hero-showcases .project-information .description {
   margin-top: 1em;
 }
 
-.hero-maps .project-information .description p {
+.hero-showcases .project-information .description p {
   color: var(--text-white);
 }
 
@@ -393,7 +393,7 @@ footer .desktop-button-up img {
 
 .showcase-content-one .information-one .left .title, .showcase-content-one .information-one .right .title {
   font-weight: var(--semibold);
-  font-size: var(--maps-information-title);
+  font-size: var(--showcases-information-title);
 }
 
 .showcase-content-one .information-one .left .desc, .showcase-content-one .information-one .right .desc {
@@ -488,14 +488,14 @@ footer .desktop-button-up img {
   footer .desktop-button-up ul a {
     font-size: var(--normal-tablet);
   }
-  .hero-maps {
+  .hero-showcases {
     margin: 2em 32px 0;
   }
-  .hero-maps .hero-maps-desc {
+  .hero-showcases .hero-showcases-desc {
     width: 700px;
     line-height: 38px;
   }
-  .hero-maps .project-information {
+  .hero-showcases .project-information {
     margin: 6em 0 3em;
   }
   .showcase-content-one .information-one .left img, .showcase-content-one .information-one .right img {
@@ -503,7 +503,7 @@ footer .desktop-button-up img {
     margin-top: 32px;
   }
   .showcase-content-one .information-one .left .title, .showcase-content-one .information-one .right .title {
-    font-size: var(--maps-information-title-tablet);
+    font-size: var(--showcases-information-title-tablet);
   }
 }
 
@@ -604,10 +604,10 @@ footer .desktop-button-up img {
     -ms-grid-column-span: 4;
     grid-area: project-7;
   }
-  .hero-maps {
+  .hero-showcases {
     margin: 2em 80px 0;
   }
-  .hero-maps .project-information {
+  .hero-showcases .project-information {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 300px auto;
@@ -742,19 +742,19 @@ footer .desktop-button-up img {
     width: 300px;
     margin: 6em 0 2em;
   }
-  .map-preview .map-container img {
+  .showcase-preview .showcase-container img {
     height: 900px;
   }
-  .hero-maps {
+  .hero-showcases {
     margin: 4em 5em 0;
   }
-  .hero-maps h1 {
+  .hero-showcases h1 {
     font-size: var(--title-desktop);
   }
-  .hero-maps .hero-maps-desc {
+  .hero-showcases .hero-showcases-desc {
     width: 100%;
   }
-  .hero-maps .project-information {
+  .hero-showcases .project-information {
     -ms-grid-columns: 400px auto;
         grid-template-columns: 400px auto;
     margin: 10em 0 4em;
@@ -817,10 +817,10 @@ footer .desktop-button-up img {
   .previous-work .projects a img {
     height: 500px;
   }
-  .map-preview .map-container img {
+  .showcase-preview .showcase-container img {
     width: 1920px;
   }
-  .hero-maps {
+  .hero-showcases {
     margin: 4em 8em 0;
   }
   .showcase-content-one {
@@ -866,10 +866,10 @@ footer .desktop-button-up img {
     width: 2340px;
     margin: 0 auto;
   }
-  .map-preview .map-container img {
+  .showcase-preview .showcase-container img {
     width: 2560px;
   }
-  .hero-maps, .showcase-content-one {
+  .hero-showcases, .showcase-content-one {
     width: 1900px;
     margin: 0 auto;
   }
