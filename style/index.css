@@ -15,8 +15,8 @@
   --normal-mobile: 20px;
   --contact-tablet: 100px;
   --contact-mobile: 50px;
-  --showcases-information-title-tablet: 50px;
-  --showcases-information-title: 30px;
+  --showcase-information-title-tablet: 50px;
+  --showcase-information-title: 30px;
 }
 
 * {
@@ -346,28 +346,28 @@ footer .desktop-button-up img {
   background: linear-gradient(0deg, #101010 8%, rgba(16, 16, 16, 0.596) 100%);
 }
 
-.hero-showcases {
+.hero-showcase {
   margin: 6em 16px 4em;
 }
 
-.hero-showcases h1 {
+.hero-showcase h1 {
   font-weight: var(--semibold);
   font-size: var(--title-mobile);
 }
 
-.hero-showcases .hero-showcases-desc {
+.hero-showcase .hero-showcase-desc {
   line-height: 26px;
 }
 
-.hero-showcases .project-information {
+.hero-showcase .project-information {
   margin-top: 12em;
 }
 
-.hero-showcases .project-information .description {
+.hero-showcase .project-information .description {
   margin-top: 1em;
 }
 
-.hero-showcases .project-information .description p {
+.hero-showcase .project-information .description p {
   color: var(--text-white);
 }
 
@@ -393,7 +393,7 @@ footer .desktop-button-up img {
 
 .showcase-content-one .information-one .left .title, .showcase-content-one .information-one .right .title {
   font-weight: var(--semibold);
-  font-size: var(--showcases-information-title);
+  font-size: var(--showcase-information-title);
 }
 
 .showcase-content-one .information-one .left .desc, .showcase-content-one .information-one .right .desc {
@@ -488,14 +488,14 @@ footer .desktop-button-up img {
   footer .desktop-button-up ul a {
     font-size: var(--normal-tablet);
   }
-  .hero-showcases {
+  .hero-showcase {
     margin: 2em 32px 0;
   }
-  .hero-showcases .hero-showcases-desc {
+  .hero-showcase .hero-showcase-desc {
     width: 700px;
     line-height: 38px;
   }
-  .hero-showcases .project-information {
+  .hero-showcase .project-information {
     margin: 6em 0 3em;
   }
   .showcase-content-one .information-one .left img, .showcase-content-one .information-one .right img {
@@ -503,7 +503,7 @@ footer .desktop-button-up img {
     margin-top: 32px;
   }
   .showcase-content-one .information-one .left .title, .showcase-content-one .information-one .right .title {
-    font-size: var(--showcases-information-title-tablet);
+    font-size: var(--showcase-information-title-tablet);
   }
 }
 
@@ -604,10 +604,10 @@ footer .desktop-button-up img {
     -ms-grid-column-span: 4;
     grid-area: project-7;
   }
-  .hero-showcases {
+  .hero-showcase {
     margin: 2em 80px 0;
   }
-  .hero-showcases .project-information {
+  .hero-showcase .project-information {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 300px auto;
@@ -745,16 +745,16 @@ footer .desktop-button-up img {
   .showcase-preview .showcase-container img {
     height: 900px;
   }
-  .hero-showcases {
+  .hero-showcase {
     margin: 4em 5em 0;
   }
-  .hero-showcases h1 {
+  .hero-showcase h1 {
     font-size: var(--title-desktop);
   }
-  .hero-showcases .hero-showcases-desc {
+  .hero-showcase .hero-showcase-desc {
     width: 100%;
   }
-  .hero-showcases .project-information {
+  .hero-showcase .project-information {
     -ms-grid-columns: 400px auto;
         grid-template-columns: 400px auto;
     margin: 10em 0 4em;
@@ -820,7 +820,7 @@ footer .desktop-button-up img {
   .showcase-preview .showcase-container img {
     width: 1920px;
   }
-  .hero-showcases {
+  .hero-showcase {
     margin: 4em 8em 0;
   }
   .showcase-content-one {
@@ -869,7 +869,7 @@ footer .desktop-button-up img {
   .showcase-preview .showcase-container img {
     width: 2560px;
   }
-  .hero-showcases, .showcase-content-one {
+  .hero-showcase, .showcase-content-one {
     width: 1900px;
     margin: 0 auto;
   }

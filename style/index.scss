@@ -22,8 +22,8 @@
     --normal-mobile: 20px;
     --contact-tablet: 100px;
     --contact-mobile: 50px;
-    --showcases-information-title-tablet: 50px;
-    --showcases-information-title: 30px;
+    --showcase-information-title-tablet: 50px;
+    --showcase-information-title: 30px;
 }
 
 * {
@@ -293,7 +293,7 @@ footer {
 }
 
 
-// showcases
+// showcase
 
 .showcase-preview {
   display: flex;
@@ -322,7 +322,7 @@ footer {
   }
 }
 
-.hero-showcases {
+.hero-showcase {
   margin: 6em 16px 4em;
 
   h1 {
@@ -330,7 +330,7 @@ footer {
     font-size: var(--title-mobile);
   }
 
-  .hero-showcases-desc {
+  .hero-showcase-desc {
     line-height: 26px;
   }
 
@@ -365,7 +365,7 @@ footer {
 
       .title {
         font-weight: var(--semibold);
-        font-size: var(--showcases-information-title);
+        font-size: var(--showcase-information-title);
       }
 
       .desc {
@@ -477,12 +477,12 @@ footer {
     }
   }
 
-  // showcases
+  // showcase
 
-  .hero-showcases {
+  .hero-showcase {
     margin: 2em 32px 0;
 
-    .hero-showcases-desc {
+    .hero-showcase-desc {
       width: 700px;
       line-height: 38px;
     }
@@ -501,7 +501,7 @@ footer {
         }
 
         .title {
-          font-size: var(--showcases-information-title-tablet);
+          font-size: var(--showcase-information-title-tablet);
         }
       }
     }
@@ -609,7 +609,7 @@ footer {
     }
   }
 
-  .hero-showcases {
+  .hero-showcase {
     margin: 2em 80px 0;
 
     .project-information {
@@ -756,7 +756,7 @@ footer {
     }
   }
 
-  // showcases
+  // showcase
 
   .showcase-preview {
     .showcase-container {
@@ -766,14 +766,14 @@ footer {
     }
   }
 
-  .hero-showcases {
+  .hero-showcase {
     margin: 4em 5em 0;
 
     h1 {
       font-size: var(--title-desktop);
     }
 
-    .hero-showcases-desc {
+    .hero-showcase-desc {
       width: 100%;
     }
 
@@ -858,7 +858,7 @@ footer {
     }
   }
 
-  .hero-showcases {
+  .hero-showcase {
     margin: 4em 8em 0;
   }
 
@@ -934,7 +934,7 @@ footer {
     }
   }
 
-  .hero-showcases, .showcase-content-one {
+  .hero-showcase, .showcase-content-one {
     width: 1900px;
     margin: 0 auto;
   }
