@@ -849,11 +849,44 @@ footer {
       }
     }
   }
+
+  .map-preview {
+    .map-container {
+       img {
+          width: 1920px;
+       }
+    }
+  }
+
+  .hero-maps {
+    margin: 4em 8em 0;
+  }
+
+  .showcase-content-one {
+    margin: 0 8em 0;
+
+    .information-one {
+      margin: 6em 4em;
+    }
+  }
+
+  .showcase-content-two {
+    .content-information {
+      padding: 0 7em;
+    }
+  }
+
 }
 
 @media only screen and (min-width: 2560px) {
 
- .hero h1, .previous-work, footer {
+  .hero {
+    .video-container video {
+      aspect-ratio: 21/9;
+    }
+  }
+
+ .hero h1, .previous-work, footer, .content-images-two {
     width: 2340px;
     margin: 0 auto;
   }
@@ -892,4 +925,43 @@ footer {
       margin: 0 auto;
     }
   }
+
+  .map-preview {
+    .map-container {
+       img {
+          width: 2560px;
+       }
+    }
+  }
+
+  .hero-maps, .showcase-content-one {
+    width: 1900px;
+    margin: 0 auto;
+  }
+
+  .showcase-content-one .information-one {
+    width: 1200px;
+    margin: 6em auto;
+  }
+
+  .showcase-content-two {
+    width: 2560px;
+    margin: 0 auto;
+
+    .content-information {
+      width: 1900px;
+      margin: 6em auto;
+    }
+
+    img {
+      height: 800px;
+    }
+  }
+
+  .other-projects {
+    width: 2340px;
+    margin: 8em auto 0;
+  }
+
+
 }
