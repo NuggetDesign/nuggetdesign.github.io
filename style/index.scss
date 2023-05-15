@@ -857,7 +857,7 @@ footer {
 
 @media only screen and (min-width: 1920px) {
 
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up {
+  .about, .hero h1, .previous-work, footer .mobile-button-up, footer .desktop-button-up, .all-projects, .hero-maps {
     width: 1640px;
     margin: 0 auto;
   }
@@ -923,6 +923,31 @@ footer {
   .showcase-content-two {
     .content-information {
       padding: 0 7em;
+    }
+  }
+
+  footer {
+    .description {
+      width: 1640px;
+      margin: 0 auto;
+      position: relative;
+
+      p {
+        width: 800px;
+      }
+    }
+
+    .desktop-button-up {
+      a img {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .hero-maps {
+    margin-bottom: 2em;
+    p {
+      width: 700px;
     }
   }
 
@@ -1012,12 +1037,4 @@ footer {
     width: 2340px;
     margin: 8em auto 0;
   }
-
-  .hero-maps {
-    margin-bottom: 2em;
-    p {
-      width: 700px;
-    }
-  }
-
 }
