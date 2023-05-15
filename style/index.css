@@ -37,6 +37,23 @@
   list-style: none;
 }
 
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5a5a5a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a5a5a;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
 body {
   font-size: var(--normal-mobile);
   background-color: var(--background-black);

@@ -40,6 +40,24 @@
     ul {list-style: none;}
 }
 
+::-webkit-scrollbar-track { 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(90, 90, 90); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(90, 90, 90); 
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
 body {
     font-size: var(--normal-mobile);
     background-color: var(--background-black);
