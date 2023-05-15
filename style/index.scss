@@ -444,6 +444,81 @@ footer {
     }
 }
 
+
+
+
+.wrapper {
+  height: 20%;
+  width: 100%;
+  background: #555;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel {
+  background: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: green;
+  height: 80%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  flex-shrink: 0;
+  color: black;
+  font-size: 21px;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.red {
+  background: red;
+}
+
+// .prev {
+//   position: absolute;
+//   top: 10%;
+//   left: 15%;
+// }
+// .next {
+//   position: absolute;
+//   top: 10%;
+//   right: 15%;
+// }
+
+.prev, .next, .toggle {
+  padding: 1rem 2rem 1rem 2rem;
+  border: none;
+  background: #555;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+// .toggle {
+//   position: absolute;
+//   top: 10%;
+// }
+
+.show-overflow {
+  overflow: visible;
+}
+
 @media only screen and (min-width: 768px) {
 
   .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps {
