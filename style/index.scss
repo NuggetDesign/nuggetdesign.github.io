@@ -936,7 +936,7 @@ footer {
     }
   }
 
- .hero h1, .previous-work, footer, .content-images-two {
+ .hero h1, .previous-work, footer, .content-images-two, .all-projects, .hero-maps {
     width: 2340px;
     margin: 0 auto;
   }
@@ -1013,5 +1013,11 @@ footer {
     margin: 8em auto 0;
   }
 
+  .hero-maps {
+    margin-bottom: 2em;
+    p {
+      width: 700px;
+    }
+  }
 
 }
