@@ -17,6 +17,8 @@
   --contact-mobile: 50px;
   --showcase-information-title-tablet: 50px;
   --showcase-information-title: 30px;
+  --maps-title-mobile: 60px;
+  --maps-desc-mobile: 20px;
 }
 
 * {
@@ -521,7 +523,7 @@ footer .desktop-button-up img {
 }
 
 @media only screen and (min-width: 1024px) {
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps {
     margin: 0 80px;
   }
   .hero .video-container video {
@@ -718,6 +720,29 @@ footer .desktop-button-up img {
     margin: 7em 0 2em;
     padding: 1em;
     margin-left: auto;
+  }
+  .hero-maps {
+    width: 600px;
+  }
+  .hero-maps h1 {
+    margin-bottom: .2em;
+  }
+  .hero-maps p {
+    font-size: var(--maps-desc-mobile);
+  }
+  .all-projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 2em;
+  }
+  .all-projects .projects {
+    line-height: 20px;
+  }
+  .all-projects .projects .title, .all-projects .projects .description {
+    font-size: 16px;
   }
 }
 

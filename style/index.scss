@@ -24,6 +24,8 @@
     --contact-mobile: 50px;
     --showcase-information-title-tablet: 50px;
     --showcase-information-title: 30px;
+    --maps-title-mobile: 60px;
+    --maps-desc-mobile: 20px;
 }
 
 * {
@@ -531,7 +533,7 @@ footer {
 
 @media only screen and (min-width: 1024px) {
 
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps {
     margin: 0 80px;
   }
 
@@ -725,6 +727,35 @@ footer {
         margin: 7em 0 2em;
         padding: 1em;
         margin-left: auto;
+      }
+    }
+  }
+
+  // Maps
+
+  .hero-maps {
+    width: 600px;
+
+    h1 {
+      margin-bottom: .2em;
+    }
+
+    p {
+      font-size: var(--maps-desc-mobile);
+    }
+  }
+
+  .all-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 2em;
+
+    .projects {
+      line-height: 20px;
+
+      .title, .description {
+        font-size: 16px;
       }
     }
   }
