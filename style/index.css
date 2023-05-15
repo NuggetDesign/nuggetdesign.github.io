@@ -246,11 +246,11 @@ body img {
   font-size: 20px;
 }
 
-.previous-work .projects, .other-projects .projects {
+.previous-work .projects, .other-projects .projects, .all-projects .projects {
   line-height: 26px;
 }
 
-.previous-work .projects img, .other-projects .projects img {
+.previous-work .projects img, .other-projects .projects img, .all-projects .projects img {
   margin-bottom: .5em;
   -webkit-transition: border-radius 0.3s ease, -webkit-transform 0.3s ease;
   transition: border-radius 0.3s ease, -webkit-transform 0.3s ease;
@@ -258,13 +258,13 @@ body img {
   transition: transform 0.3s ease, border-radius 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-.previous-work .projects img:hover, .other-projects .projects img:hover {
+.previous-work .projects img:hover, .other-projects .projects img:hover, .all-projects .projects img:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   border-radius: 20px;
 }
 
-.previous-work .projects .description, .other-projects .projects .description {
+.previous-work .projects .description, .other-projects .projects .description, .all-projects .projects .description {
   color: var(--text-white);
   margin-bottom: 2em;
 }
@@ -415,17 +415,6 @@ footer .desktop-button-up img {
 
 .all-projects {
   margin: 0em 16px 2em;
-  display: -ms-grid;
-  display: grid;
-  gap: 1em;
-}
-
-.all-projects .showcases {
-  line-height: 26px;
-}
-
-.all-projects .showcases .description {
-  color: var(--text-white);
 }
 
 .scroll-effect {
@@ -466,7 +455,7 @@ footer .desktop-button-up img {
 }
 
 @media only screen and (min-width: 768px) {
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps {
     margin: 32px;
   }
   .container {
@@ -497,7 +486,7 @@ footer .desktop-button-up img {
     padding: 5em 2em;
     font-size: var(--normal-tablet);
   }
-  .previous-work .projects, .other-projects .projects {
+  .previous-work .projects, .other-projects .projects, .all-projects .projects {
     line-height: 38px;
   }
   footer .scroll-effect p {

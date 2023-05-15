@@ -227,7 +227,7 @@ body {
     font-size: 20px;
 }
 
-.previous-work, .other-projects {
+.previous-work, .other-projects, .all-projects {
     .projects {
         line-height: 26px;
 
@@ -394,17 +394,6 @@ footer {
 
 .all-projects {
   margin: 0em 16px 2em;
-  display: grid;
-  gap: 1em;
-
-  .showcases {
-    line-height: 26px;
-    
-    .description {
-      color: var(--text-white);
-    }
-  }
-
 }
 
 
@@ -437,7 +426,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
 
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps {
     margin: 32px;
   }
   
@@ -477,8 +466,8 @@ footer {
     font-size: var(--normal-tablet);
   }
 
-  .previous-work, .other-projects {
-    .projects  {
+  .previous-work, .other-projects, .all-projects {
+    .projects {
       line-height: 38px;
     }
   }
@@ -530,6 +519,12 @@ footer {
       }
     }
   }
+
+
+  // Maps
+
+  
+
 
 }
 
