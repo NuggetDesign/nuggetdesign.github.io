@@ -857,7 +857,7 @@ footer {
 
 @media only screen and (min-width: 1920px) {
 
-  .about, .hero h1, .previous-work, footer .mobile-button-up, footer .desktop-button-up, .all-projects, .hero-maps {
+  .about, .hero h1, .previous-work, footer .mobile-button-up, footer .desktop-button-up, .all-projects, .hero-maps, .showcase-content-two, .other-projects {
     width: 1640px;
     margin: 0 auto;
   }
@@ -949,6 +949,10 @@ footer {
     p {
       width: 700px;
     }
+  }
+
+  .other-projects {
+    margin: 6em auto 2em;
   }
 
 }
