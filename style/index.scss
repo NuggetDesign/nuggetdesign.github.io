@@ -381,7 +381,31 @@ footer {
   }
 }
 
+// Maps
 
+.hero-maps {
+  margin: 2em 16px 3em; 
+
+  h1 {
+    font-weight: var(--semibold);
+    font-size: var(--title-mobile);
+  }
+}
+
+.all-projects {
+  margin: 0em 16px 2em;
+  display: grid;
+  gap: 1em;
+
+  .showcases {
+    line-height: 26px;
+    
+    .description {
+      color: var(--text-white);
+    }
+  }
+
+}
 
 
 

@@ -404,6 +404,30 @@ footer .desktop-button-up img {
   margin: 6em 0;
 }
 
+.hero-maps {
+  margin: 2em 16px 3em;
+}
+
+.hero-maps h1 {
+  font-weight: var(--semibold);
+  font-size: var(--title-mobile);
+}
+
+.all-projects {
+  margin: 0em 16px 2em;
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+}
+
+.all-projects .showcases {
+  line-height: 26px;
+}
+
+.all-projects .showcases .description {
+  color: var(--text-white);
+}
+
 .scroll-effect {
   width: 100%;
   overflow: hidden;
