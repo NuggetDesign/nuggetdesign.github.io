@@ -455,6 +455,30 @@ footer {
   }
 }
 
+.about-information {
+  text-align: center;
+  display: grid;
+  gap: 50px;
+  margin-bottom: 3em;
+
+  .informations {
+    .title {
+      font-weight: var(--semibold);
+      font-size: var(--title-mobile);
+      color: #FEDB52;
+      background-image: -webkit-linear-gradient(270deg, #FEDB52 15%, #E36A0A 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .description {
+      font-weight: var(--medium);
+    }
+  }
+}
+
 
 
 

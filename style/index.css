@@ -472,6 +472,29 @@ footer .desktop-button-up img {
   margin-top: 1em;
 }
 
+.about-information {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+  margin-bottom: 3em;
+}
+
+.about-information .informations .title {
+  font-weight: var(--semibold);
+  font-size: var(--title-mobile);
+  color: #FEDB52;
+  background-image: -webkit-linear-gradient(270deg, #FEDB52 15%, #E36A0A 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-information .informations .description {
+  font-weight: var(--medium);
+}
+
 .scroll-effect {
   width: 100%;
   overflow: hidden;
