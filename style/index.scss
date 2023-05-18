@@ -469,12 +469,30 @@ footer {
       background-image: -webkit-linear-gradient(270deg, #FEDB52 15%, #E36A0A 100%);
       background-clip: text;
       -webkit-background-clip: text;
-      text-fill-color: transparent;
+      text-emphasis-color: transparent;
       -webkit-text-fill-color: transparent;
     }
 
     .description {
       font-weight: var(--medium);
+    }
+  }
+}
+
+
+
+
+.values {
+  margin: 6em 16px;
+
+  .details {
+    display: grid;
+    gap: 25px;
+    margin-top: 2em;
+    
+    .desc {
+      color: var(--text-white);
+      margin-top: .5em;
     }
   }
 }
@@ -524,6 +542,7 @@ footer {
 
 .box {
   display: flex;
+  gap: 1em;
   align-items: center;
   justify-content: center;
   background: green;
@@ -531,12 +550,10 @@ footer {
   width: 50%;
   margin: 0;
   padding: 0;
-  position: relative;
   flex-shrink: 0;
   color: black;
   font-size: 21px;
   cursor: pointer;
-  margin-right: 1em;
 }
 
 .red {

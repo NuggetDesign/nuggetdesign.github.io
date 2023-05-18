@@ -487,12 +487,29 @@ footer .desktop-button-up img {
   background-image: -webkit-linear-gradient(270deg, #FEDB52 15%, #E36A0A 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  text-fill-color: transparent;
+  -webkit-text-emphasis-color: transparent;
+          text-emphasis-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
 .about-information .informations .description {
   font-weight: var(--medium);
+}
+
+.values {
+  margin: 6em 16px;
+}
+
+.values .details {
+  display: -ms-grid;
+  display: grid;
+  gap: 25px;
+  margin-top: 2em;
+}
+
+.values .details .desc {
+  color: var(--text-white);
+  margin-top: .5em;
 }
 
 .scroll-effect {
@@ -550,6 +567,7 @@ footer .desktop-button-up img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -561,13 +579,11 @@ footer .desktop-button-up img {
   width: 50%;
   margin: 0;
   padding: 0;
-  position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   color: black;
   font-size: 21px;
   cursor: pointer;
-  margin-right: 1em;
 }
 
 .red {
