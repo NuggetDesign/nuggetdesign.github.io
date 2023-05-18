@@ -19,6 +19,7 @@
   --showcase-information-title: 30px;
   --maps-title-mobile: 60px;
   --maps-desc-mobile: 20px;
+  --detail-title-mobile: 25px;
 }
 
 * {
@@ -436,6 +437,41 @@ footer .desktop-button-up img {
   margin: 0em 16px 2em;
 }
 
+.hero-about-us {
+  margin: 2em 16px;
+}
+
+.hero-about-us h1 {
+  font-weight: var(--extrabold);
+  font-size: var(--title-mobile);
+  line-height: 64px;
+  text-align: center;
+}
+
+.hero-about-us .hero-details {
+  margin-top: 5em;
+}
+
+.hero-about-us .hero-details .details {
+  margin-top: 2em;
+}
+
+.hero-about-us .hero-details .details .title {
+  font-size: var(--detail-title-mobile);
+}
+
+.hero-about-us .hero-details .details .description {
+  margin-top: 1em;
+}
+
+.hero-about-us .hero-details .details .description p {
+  color: var(--text-white);
+}
+
+.hero-about-us .hero-details .details .description .two {
+  margin-top: 1em;
+}
+
 .scroll-effect {
   width: 100%;
   overflow: hidden;
@@ -485,24 +521,6 @@ footer .desktop-button-up img {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-}
-
-.carousel {
-  background: blue;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .box {

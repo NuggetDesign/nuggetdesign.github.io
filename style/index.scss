@@ -26,6 +26,7 @@
     --showcase-information-title: 30px;
     --maps-title-mobile: 60px;
     --maps-desc-mobile: 20px;
+    --detail-title-mobile: 25px;
 }
 
 * {
@@ -417,6 +418,46 @@ footer {
 }
 
 
+// About Us
+
+.hero-about-us {
+  margin: 2em 16px; 
+  
+  h1 {
+    font-weight: var(--extrabold);
+    font-size: var(--title-mobile);
+    line-height: 64px;
+    text-align: center;
+  }
+
+  .hero-details {
+    margin-top: 5em;
+
+    .details {
+      margin-top: 2em;
+      
+      .title {
+        font-size: var(--detail-title-mobile);
+      }
+
+      .description {
+        margin-top: 1em;
+        
+        p {
+          color: var(--text-white);
+        }
+
+        .two {
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+}
+
+
+
+
 
 
 
@@ -455,18 +496,6 @@ footer {
   display: flex;
   align-items: center;
   overflow: hidden;
-}
-
-.carousel {
-  background: blue;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .box {
@@ -618,7 +647,7 @@ footer {
 
   // Maps
 
-  
+   
 
 
 }
