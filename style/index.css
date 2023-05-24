@@ -551,7 +551,53 @@ footer .desktop-button-up img {
   }
 }
 
-.wrapper {
+.carousel {
+  margin-top: 8em;
+}
+
+.carousel .carousel-information {
+  margin: 1em 16px;
+}
+
+.carousel .carousel-information p {
+  font-weight: var(--medium);
+}
+
+.carousel .card-buttons {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5em;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.carousel .card-buttons .prev, .carousel .card-buttons .next {
+  padding: 2em;
+  border: none;
+  border-radius: 100%;
+  background: var(--background-black-card);
+  color: white;
+  cursor: pointer;
+}
+
+.carousel .card-buttons .prev img, .carousel .card-buttons .next img {
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel .card-buttons .toggle {
+  display: none;
+}
+
+.carousel .wrapper {
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -563,7 +609,7 @@ footer .desktop-button-up img {
   overflow: hidden;
 }
 
-.box {
+.carousel .wrapper .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,14 +630,14 @@ footer .desktop-button-up img {
   cursor: pointer;
 }
 
-.card-information {
+.carousel .wrapper .box .card-information {
   width: 280px;
   padding: 2.5em;
   background-color: var(--background-black-card);
   border-radius: 20px;
 }
 
-.card-information .icon {
+.carousel .wrapper .box .card-information .icon {
   background-color: var(--background-black);
   width: 80px;
   height: 80px;
@@ -605,11 +651,11 @@ footer .desktop-button-up img {
   margin: 5em 0 2em;
 }
 
-.card-information .icon img {
+.carousel .wrapper .box .card-information .icon img {
   width: 30px;
 }
 
-.card-information .number {
+.carousel .wrapper .box .card-information .number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,28 +664,18 @@ footer .desktop-button-up img {
           justify-content: right;
 }
 
-.card-information .title {
+.carousel .wrapper .box .card-information .title {
   font-weight: var(--semibold);
   margin-bottom: .5em;
 }
 
-.card-information .desc {
+.carousel .wrapper .box .card-information .desc {
   font-size: var(--card-mobile);
   margin-bottom: 1em;
 }
 
 .red {
   background: red;
-}
-
-.prev, .next, .toggle {
-  padding: 1rem 2rem 1rem 2rem;
-  border: none;
-  background: #555;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .show-overflow {
