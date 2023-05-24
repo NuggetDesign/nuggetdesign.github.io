@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 :root {
   --background-black: #101010;
+  --background-black-card: #151515;
   --h1-white: #D7D6D3;
   --text-white: #868481;
   --regular: 400;
@@ -20,6 +21,7 @@
   --maps-title-mobile: 60px;
   --maps-desc-mobile: 20px;
   --detail-title-mobile: 25px;
+  --card-mobile: 16px;
 }
 
 * {
@@ -550,9 +552,7 @@ footer .desktop-button-up img {
 }
 
 .wrapper {
-  height: 20%;
   width: 100%;
-  background: #555;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -567,16 +567,14 @@ footer .desktop-button-up img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: green;
-  height: 80%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   -ms-flex-negative: 0;
@@ -584,6 +582,50 @@ footer .desktop-button-up img {
   color: black;
   font-size: 21px;
   cursor: pointer;
+}
+
+.card-information {
+  width: 280px;
+  padding: 2.5em;
+  background-color: var(--background-black-card);
+  border-radius: 20px;
+}
+
+.card-information .icon {
+  background-color: var(--background-black);
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5em 0 2em;
+}
+
+.card-information .icon img {
+  width: 30px;
+}
+
+.card-information .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.card-information .title {
+  font-weight: var(--semibold);
+  margin-bottom: .5em;
+}
+
+.card-information .desc {
+  font-size: var(--card-mobile);
+  margin-bottom: 1em;
 }
 
 .red {

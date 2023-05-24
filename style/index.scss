@@ -2,6 +2,7 @@
 
 :root {
     --background-black: #101010;
+    --background-black-card: #151515;
 
     // Font Color
     --h1-white: #D7D6D3;
@@ -27,6 +28,7 @@
     --maps-title-mobile: 60px;
     --maps-desc-mobile: 20px;
     --detail-title-mobile: 25px;
+    --card-mobile: 16px;
 }
 
 * {
@@ -531,9 +533,7 @@ footer {
 
 
 .wrapper {
-  height: 20%;
   width: 100%;
-  background: #555;
   position: relative;
   display: flex;
   align-items: center;
@@ -542,18 +542,53 @@ footer {
 
 .box {
   display: flex;
-  gap: 1em;
   align-items: center;
   justify-content: center;
-  background: green;
-  height: 80%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   flex-shrink: 0;
   color: black;
   font-size: 21px;
   cursor: pointer;
+}
+
+.card-information {
+  width: 280px;
+  padding: 2.5em;
+  background-color: var(--background-black-card);
+  border-radius: 20px;
+
+  .icon {
+    background-color: var(--background-black);
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5em 0 2em;
+
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .number {
+    display: flex;
+    justify-content: right;
+  }
+
+  .title {
+    font-weight: var(--semibold);
+    margin-bottom: .5em;
+  }
+
+  .desc {
+    font-size: var(--card-mobile);
+    margin-bottom: 1em;
+  }
 }
 
 .red {
