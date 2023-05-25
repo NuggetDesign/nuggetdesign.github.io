@@ -746,6 +746,12 @@ footer .desktop-button-up img {
   .showcase-content-one .information-one .left .title, .showcase-content-one .information-one .right .title {
     font-size: var(--showcase-information-title-tablet);
   }
+  .hero-about-us h1 {
+    width: 700px;
+    margin: 0 auto;
+    font-size: var(--title-tablet);
+    line-height: 120px;
+  }
   .carousel {
     margin-top: 8em;
   }
