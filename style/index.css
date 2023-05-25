@@ -765,7 +765,10 @@ footer .desktop-button-up img {
     padding: 2.5em;
   }
   .carousel .card-buttons .prev img, .carousel .card-buttons .next img {
-    width: 40px;
+    width: 30px;
+  }
+  .carousel .wrapper {
+    margin-top: 2em;
   }
   .carousel .wrapper .box .card-information {
     width: 500px;
@@ -789,6 +792,7 @@ footer .desktop-button-up img {
 @media only screen and (min-width: 1024px) {
   .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps, .hero-about-us, .about-information, .values {
     margin: 0 80px;
+    font-size: var(--normal-mobile);
   }
   .hero .video-container video {
     aspect-ratio: 16/9;
@@ -1011,14 +1015,11 @@ footer .desktop-button-up img {
   .hero-about-us .hero-details {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 200px 1fr;
-        grid-template-columns: 200px 1fr;
+    -ms-grid-columns: 300px 1fr;
+        grid-template-columns: 300px 1fr;
     -webkit-box-align: first baseline;
         -ms-flex-align: first baseline;
             align-items: first baseline;
-  }
-  .hero-about-us .hero-details .details .title {
-    font-size: var(--normal-tablet);
   }
   .hero-about-us .hero-details .details .description {
     display: -ms-grid;
@@ -1039,27 +1040,42 @@ footer .desktop-button-up img {
         grid-template-columns: repeat(2, 1fr);
   }
   .carousel .carousel-information {
-    margin: 5em 80px;
+    margin: 5em 80px 2em;
   }
   .carousel .carousel-information .texts {
     width: 600px;
   }
   .carousel .wrapper {
+    margin-top: 0;
     padding-left: 80px;
   }
   .carousel .wrapper .box {
-    width: 640px;
+    width: 520px;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
+  }
+  .carousel .wrapper .box .card-information {
+    padding: 3em;
+    width: 360px;
+  }
+  .carousel .wrapper .box .card-information .icon {
+    width: 90px;
+    height: 90px;
+  }
+  .carousel .wrapper .box .card-information .icon img {
+    width: 30px;
+  }
+  .carousel .wrapper .box .card-information .title, .carousel .wrapper .box .card-information .desc, .carousel .wrapper .box .card-information .number {
+    font-size: var(--normal-mobile);
   }
   .values {
     margin-top: 4em;
     margin-bottom: 3em;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 200px 1fr;
-        grid-template-columns: 200px 1fr;
+    -ms-grid-columns: 400px 1fr;
+        grid-template-columns: 400px 1fr;
     -webkit-box-align: first baseline;
         -ms-flex-align: first baseline;
             align-items: first baseline;
