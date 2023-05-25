@@ -458,12 +458,13 @@ footer {
 }
 
 .about-information {
-  text-align: center;
   display: grid;
   gap: 50px;
   margin-bottom: 3em;
 
   .informations {
+    text-align: center;
+
     .title {
       font-weight: var(--semibold);
       font-size: var(--title-mobile);
@@ -654,7 +655,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
 
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps, .carousel, .hero-about-us, .about-information, .values {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps, .hero-about-us, .about-information, .values {
     margin: 32px;
   }
   
@@ -763,6 +764,10 @@ footer {
   .carousel {
     margin-top: 8em;
 
+    .carousel-information {
+      margin: 0 32px;
+    }
+
     .card-buttons {
       .prev, .next {
         padding: 2.5em;
@@ -807,7 +812,7 @@ footer {
 
 @media only screen and (min-width: 1024px) {
 
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps, .hero-about-us, .about-information, .values {
     margin: 0 80px;
   }
 
@@ -1032,6 +1037,62 @@ footer {
         font-size: 16px;
       }
     }
+  }
+
+  // About Us
+
+  .hero-about-us {
+    .hero-details {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      align-items: first baseline;
+
+      .details {
+        .title {
+          font-size: var(--normal-tablet);
+        }
+
+        .description {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: first baseline;
+          column-gap: 2em;
+        }
+      }
+    }
+  }
+
+  .about-information {
+    margin-top: 6em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carousel {
+    .carousel-information {
+      margin: 5em 80px;
+
+      .texts {
+        width: 600px;
+      }
+    }
+
+    .wrapper {
+      padding-left: 80px;
+
+      .box {
+        width: 640px;
+        justify-content: left;
+      }
+    }
+  }
+
+  .values {
+    margin-top: 4em;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: first baseline;
   }
 
 

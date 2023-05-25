@@ -475,11 +475,14 @@ footer .desktop-button-up img {
 }
 
 .about-information {
-  text-align: center;
   display: -ms-grid;
   display: grid;
   gap: 50px;
   margin-bottom: 3em;
+}
+
+.about-information .informations {
+  text-align: center;
 }
 
 .about-information .informations .title {
@@ -683,7 +686,7 @@ footer .desktop-button-up img {
 }
 
 @media only screen and (min-width: 768px) {
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps, .carousel, .hero-about-us, .about-information, .values {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps, .hero-about-us, .about-information, .values {
     margin: 32px;
   }
   .container {
@@ -755,6 +758,9 @@ footer .desktop-button-up img {
   .carousel {
     margin-top: 8em;
   }
+  .carousel .carousel-information {
+    margin: 0 32px;
+  }
   .carousel .card-buttons .prev, .carousel .card-buttons .next {
     padding: 2.5em;
   }
@@ -781,7 +787,7 @@ footer .desktop-button-up img {
 }
 
 @media only screen and (min-width: 1024px) {
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps, .hero-about-us, .about-information, .values {
     margin: 0 80px;
   }
   .hero .video-container video {
@@ -1001,6 +1007,62 @@ footer .desktop-button-up img {
   }
   .all-projects .projects .title, .all-projects .projects .description {
     font-size: 16px;
+  }
+  .hero-about-us .hero-details {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 1fr;
+        grid-template-columns: 200px 1fr;
+    -webkit-box-align: first baseline;
+        -ms-flex-align: first baseline;
+            align-items: first baseline;
+  }
+  .hero-about-us .hero-details .details .title {
+    font-size: var(--normal-tablet);
+  }
+  .hero-about-us .hero-details .details .description {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: first baseline;
+        -ms-flex-align: first baseline;
+            align-items: first baseline;
+    -webkit-column-gap: 2em;
+            column-gap: 2em;
+  }
+  .about-information {
+    margin-top: 6em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .carousel .carousel-information {
+    margin: 5em 80px;
+  }
+  .carousel .carousel-information .texts {
+    width: 600px;
+  }
+  .carousel .wrapper {
+    padding-left: 80px;
+  }
+  .carousel .wrapper .box {
+    width: 640px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .values {
+    margin-top: 4em;
+    margin-bottom: 3em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 1fr;
+        grid-template-columns: 200px 1fr;
+    -webkit-box-align: first baseline;
+        -ms-flex-align: first baseline;
+            align-items: first baseline;
   }
 }
 
