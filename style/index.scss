@@ -1207,6 +1207,8 @@ footer {
     }
   }
 
+
+
 }
 
 @media only screen and (min-width: 1920px) {
@@ -1307,6 +1309,50 @@ footer {
 
   .other-projects {
     margin: 6em auto 2em;
+  }
+
+  .hero-about-us {
+    width: 1640px;
+    margin: 4em auto 2em;
+
+    .hero-details {
+      grid-template-columns: 600px 1fr;
+
+      .details {
+        .title {
+          font-size: 30px;
+        }
+
+        .description {
+          gap: 6em;
+        }
+      }
+    }
+  }
+  
+  .about-information {
+    grid-template-columns: repeat(2, 600px);
+    justify-content: center;
+    margin-top: 8em;
+  }
+
+  .carousel {
+    width: 1640px;
+    margin: 0 auto;
+
+    .wrapper {
+      padding-left: 0;
+    }
+
+    .carousel-information {
+      margin: 5em 0 2em;
+    }
+  }
+
+  .values {
+    width: 1640px;
+    margin: 8em auto;
+    grid-template-columns: 900px 1fr;
   }
 
 }

@@ -1226,6 +1226,44 @@ footer .desktop-button-up img {
   .other-projects {
     margin: 6em auto 2em;
   }
+  .hero-about-us {
+    width: 1640px;
+    margin: 4em auto 2em;
+  }
+  .hero-about-us .hero-details {
+    -ms-grid-columns: 600px 1fr;
+        grid-template-columns: 600px 1fr;
+  }
+  .hero-about-us .hero-details .details .title {
+    font-size: 30px;
+  }
+  .hero-about-us .hero-details .details .description {
+    gap: 6em;
+  }
+  .about-information {
+    -ms-grid-columns: (600px)[2];
+        grid-template-columns: repeat(2, 600px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 8em;
+  }
+  .carousel {
+    width: 1640px;
+    margin: 0 auto;
+  }
+  .carousel .wrapper {
+    padding-left: 0;
+  }
+  .carousel .carousel-information {
+    margin: 5em 0 2em;
+  }
+  .values {
+    width: 1640px;
+    margin: 8em auto;
+    -ms-grid-columns: 900px 1fr;
+        grid-template-columns: 900px 1fr;
+  }
 }
 
 @media only screen and (min-width: 2560px) {
