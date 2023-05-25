@@ -654,7 +654,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
 
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps, .carousel, .hero-about-us, .about-information, .values {
     margin: 32px;
   }
   
@@ -749,9 +749,48 @@ footer {
   }
 
 
-  // Maps
+  // About Us
 
-   
+  .carousel {
+    margin-top: 8em;
+
+    .card-buttons {
+      .prev, .next {
+        padding: 2.5em;
+
+        img {
+          width: 40px;
+        }
+      }
+    }
+
+    .wrapper {
+      .box {
+        .card-information {
+          width: 500px;
+
+          .icon {
+            width: 120px;
+            height: 120px;
+            margin-top: 8em;
+
+            img {
+              width: 40px;
+            }
+          }
+
+          .desc, .title, .number {
+            font-size: var(--normal-tablet);
+          }
+        }
+      }
+    }
+  }
+
+
+  .values {
+    margin-top: 6em;
+  }
 
 
 }

@@ -683,7 +683,7 @@ footer .desktop-button-up img {
 }
 
 @media only screen and (min-width: 768px) {
-  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps {
+  .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .logo img, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps, .carousel, .hero-about-us, .about-information, .values {
     margin: 32px;
   }
   .container {
@@ -745,6 +745,32 @@ footer .desktop-button-up img {
   }
   .showcase-content-one .information-one .left .title, .showcase-content-one .information-one .right .title {
     font-size: var(--showcase-information-title-tablet);
+  }
+  .carousel {
+    margin-top: 8em;
+  }
+  .carousel .card-buttons .prev, .carousel .card-buttons .next {
+    padding: 2.5em;
+  }
+  .carousel .card-buttons .prev img, .carousel .card-buttons .next img {
+    width: 40px;
+  }
+  .carousel .wrapper .box .card-information {
+    width: 500px;
+  }
+  .carousel .wrapper .box .card-information .icon {
+    width: 120px;
+    height: 120px;
+    margin-top: 8em;
+  }
+  .carousel .wrapper .box .card-information .icon img {
+    width: 40px;
+  }
+  .carousel .wrapper .box .card-information .desc, .carousel .wrapper .box .card-information .title, .carousel .wrapper .box .card-information .number {
+    font-size: var(--normal-tablet);
+  }
+  .values {
+    margin-top: 6em;
   }
 }
 
