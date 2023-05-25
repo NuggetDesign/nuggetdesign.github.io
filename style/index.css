@@ -794,6 +794,9 @@ footer .desktop-button-up img {
     margin: 0 80px;
     font-size: var(--normal-mobile);
   }
+  .hero a h1 {
+    font-size: var(--title-tablet);
+  }
   .hero .video-container video {
     aspect-ratio: 16/9;
   }
