@@ -816,14 +816,9 @@ footer {
 
   .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps, .hero-about-us, .about-information, .values {
     margin: 0 80px;
-    font-size: var(--normal-mobile);
   }
 
   .hero {
-    h1 {
-      font-size: var(--title-tablet);
-    }
-
     .video-container video {
       aspect-ratio: 16/9;
     }
@@ -1048,6 +1043,10 @@ footer {
 
   // About Us
 
+  .hero-about-us, .about-information, .values {
+    font-size: var(--normal-mobile);
+  }
+
   .hero-about-us {
     .hero-details {
       display: grid;
@@ -1073,6 +1072,8 @@ footer {
   }
 
   .carousel {
+    overflow-x: hidden;
+    
     .carousel-information {
       margin: 5em 80px 2em;
 

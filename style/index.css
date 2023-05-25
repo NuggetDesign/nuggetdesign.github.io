@@ -792,10 +792,6 @@ footer .desktop-button-up img {
 @media only screen and (min-width: 1024px) {
   .about, .hero h1, .previous-work, footer .description, footer .mobile-button-up, footer .desktop-button-up, .showcase-content-one, .showcase-content-two, .other-projects, .all-projects, .hero-maps, .hero-about-us, .about-information, .values {
     margin: 0 80px;
-    font-size: var(--normal-mobile);
-  }
-  .hero a h1 {
-    font-size: var(--title-tablet);
   }
   .hero .video-container video {
     aspect-ratio: 16/9;
@@ -1015,6 +1011,9 @@ footer .desktop-button-up img {
   .all-projects .projects .title, .all-projects .projects .description {
     font-size: 16px;
   }
+  .hero-about-us, .about-information, .values {
+    font-size: var(--normal-mobile);
+  }
   .hero-about-us .hero-details {
     display: -ms-grid;
     display: grid;
@@ -1041,6 +1040,9 @@ footer .desktop-button-up img {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .carousel {
+    overflow-x: hidden;
   }
   .carousel .carousel-information {
     margin: 5em 80px 2em;
